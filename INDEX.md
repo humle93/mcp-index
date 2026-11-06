@@ -1,21 +1,25 @@
 # Index — every entry
 
-All 106 entries, A–Z. Generated from [`data/servers.json`](data/servers.json); see the [README](README.md) for categories and descriptions.
+All 117 entries, A–Z. Generated from [`data/servers.json`](data/servers.json); see the [README](README.md) for categories and descriptions.
 
 | Project | Kind | Category | Repository | Language |
 | --- | --- | --- | --- | --- |
 | 5ire | client | Clients & hosts | [nanbingxyz/5ire](https://github.com/nanbingxyz/5ire) | TypeScript |
 | AWS MCP Servers | server | Cloud & infrastructure | [awslabs/mcp](https://github.com/awslabs/mcp) | Python |
+| Airtable MCP CLI | tool | Tools & utilities | [Airtable/airtable-mcp-cli](https://github.com/Airtable/airtable-mcp-cli) | TypeScript |
 | Apify MCP Server | server | Web, search & browsers | [apify/apify-mcp-server](https://github.com/apify/apify-mcp-server) | TypeScript |
 | Argo CD MCP | server | Developer platforms & code | [argoproj-labs/mcp-for-argocd](https://github.com/argoproj-labs/mcp-for-argocd) | TypeScript |
 | Atlassian MCP Server | server | Developer platforms & code | [atlassian/atlassian-mcp-server](https://github.com/atlassian/atlassian-mcp-server) | JavaScript |
+| Basic Memory | server | AI, models & retrieval | [basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) | Python |
 | Bitwarden MCP Server | server | Productivity & business | [bitwarden/mcp-server](https://github.com/bitwarden/mcp-server) | TypeScript |
 | Brave Search MCP | server | Web, search & browsers | [brave/brave-search-mcp-server](https://github.com/brave/brave-search-mcp-server) | TypeScript |
+| Bright Data MCP | server | Web, search & browsers | [brightdata/brightdata-mcp](https://github.com/brightdata/brightdata-mcp) | JavaScript |
 | Cherry Studio | client | Clients & hosts | [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | TypeScript |
 | Chroma MCP | server | Databases & storage | [chroma-core/chroma-mcp](https://github.com/chroma-core/chroma-mcp) | Python |
 | Chrome DevTools MCP | server | Web, search & browsers | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | TypeScript |
 | ClickHouse MCP | server | Databases & storage | [ClickHouse/mcp-clickhouse](https://github.com/ClickHouse/mcp-clickhouse) | Python |
 | Cline | client | Clients & hosts | [cline/cline](https://github.com/cline/cline) | TypeScript |
+| Cloud Run MCP | server | Cloud & infrastructure | [GoogleCloudPlatform/cloud-run-mcp](https://github.com/GoogleCloudPlatform/cloud-run-mcp) | JavaScript |
 | Cloudflare MCP Servers | server | Cloud & infrastructure | [cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare) | TypeScript |
 | Cloudflare Workers MCP | framework | Frameworks & SDKs | [cloudflare/workers-mcp](https://github.com/cloudflare/workers-mcp) | TypeScript |
 | Codebase Memory MCP | server | Developer platforms & code | [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | C |
@@ -40,9 +44,11 @@ All 106 entries, A–Z. Generated from [`data/servers.json`](data/servers.json);
 | Goose | client | Clients & hosts | [aaif-goose/goose](https://github.com/aaif-goose/goose) | Rust |
 | Grafana MCP | server | Cloud & infrastructure | [grafana/mcp-grafana](https://github.com/grafana/mcp-grafana) | Go |
 | Graphiti | server | AI, models & retrieval | [getzep/graphiti](https://github.com/getzep/graphiti) | Python |
+| Heroku MCP Server | server | Cloud & infrastructure | [heroku/heroku-mcp-server](https://github.com/heroku/heroku-mcp-server) | TypeScript |
 | Hugging Face MCP Server | server | AI, models & retrieval | [huggingface/hf-mcp-server](https://github.com/huggingface/hf-mcp-server) | TypeScript |
 | Jenkins MCP Server | server | Developer platforms & code | [jenkinsci/mcp-server-plugin](https://github.com/jenkinsci/mcp-server-plugin) | Java |
 | Jina AI MCP | server | Web, search & browsers | [jina-ai/MCP](https://github.com/jina-ai/MCP) | TypeScript |
+| Kagi MCP | server | Web, search & browsers | [kagisearch/kagimcp](https://github.com/kagisearch/kagimcp) | Python |
 | Kubernetes MCP Server | server | Cloud & infrastructure | [Flux159/mcp-server-kubernetes](https://github.com/Flux159/mcp-server-kubernetes) | TypeScript |
 | Kubernetes MCP Server (CNCF) | server | Cloud & infrastructure | [containers/kubernetes-mcp-server](https://github.com/containers/kubernetes-mcp-server) | Go |
 | LibreChat | client | Clients & hosts | [LibreChat-AI/LibreChat](https://github.com/LibreChat-AI/LibreChat) | TypeScript |
@@ -71,12 +77,14 @@ All 106 entries, A–Z. Generated from [`data/servers.json`](data/servers.json);
 | MotherDuck MCP Server | server | Databases & storage | [motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) | Python |
 | Neo4j MCP | server | Databases & storage | [neo4j-contrib/mcp-neo4j](https://github.com/neo4j-contrib/mcp-neo4j) | Python |
 | Neon MCP Server | server | Databases & storage | [neondatabase/mcp-server-neon](https://github.com/neondatabase/mcp-server-neon) | TypeScript |
+| Netlify MCP Server | server | Cloud & infrastructure | [netlify/netlify-mcp](https://github.com/netlify/netlify-mcp) | TypeScript |
 | Notion MCP Server | server | Productivity & business | [makenotion/notion-mcp-server](https://github.com/makenotion/notion-mcp-server) | TypeScript |
 | Obsidian MCP | server | Productivity & business | [MarkusPfundstein/mcp-obsidian](https://github.com/MarkusPfundstein/mcp-obsidian) | Python |
 | Open WebUI | client | Clients & hosts | [open-webui/open-webui](https://github.com/open-webui/open-webui) | Svelte |
 | OpenAI Codex CLI | client | Clients & hosts | [openai/codex](https://github.com/openai/codex) | Rust |
 | OpenSearch MCP Server | server | Databases & storage | [opensearch-project/opensearch-mcp-server-py](https://github.com/opensearch-project/opensearch-mcp-server-py) | Python |
 | Oracle MCP Servers | server | Databases & storage | [oracle/mcp](https://github.com/oracle/mcp) | Python |
+| PayPal MCP Server | server | Productivity & business | [paypal/paypal-mcp-server](https://github.com/paypal/paypal-mcp-server) | JavaScript |
 | Pinecone MCP | server | Databases & storage | [pinecone-io/pinecone-mcp](https://github.com/pinecone-io/pinecone-mcp) | TypeScript |
 | Playwright MCP | server | Web, search & browsers | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | TypeScript |
 | Playwright MCP (community) | server | Web, search & browsers | [executeautomation/mcp-playwright](https://github.com/executeautomation/mcp-playwright) | TypeScript |
@@ -84,6 +92,7 @@ All 106 entries, A–Z. Generated from [`data/servers.json`](data/servers.json);
 | Postman MCP Server | server | Developer platforms & code | [postmanlabs/postman-mcp-server](https://github.com/postmanlabs/postman-mcp-server) | TypeScript |
 | Qdrant MCP Server | server | Databases & storage | [qdrant/mcp-server-qdrant](https://github.com/qdrant/mcp-server-qdrant) | Python |
 | Qwen Code | client | Clients & hosts | [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | TypeScript |
+| Ragie MCP Server | server | AI, models & retrieval | [ragieai/ragie-mcp-server](https://github.com/ragieai/ragie-mcp-server) | JavaScript |
 | Redis MCP | server | Databases & storage | [redis/mcp-redis](https://github.com/redis/mcp-redis) | Python |
 | Reference Servers | server | Core protocol & reference | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | TypeScript |
 | Sentry Toolkit | tool | Cloud & infrastructure | [getsentry/toolkit](https://github.com/getsentry/toolkit) | TypeScript |
@@ -97,10 +106,12 @@ All 106 entries, A–Z. Generated from [`data/servers.json`](data/servers.json);
 | Square MCP Server | server | Developer platforms & code | [square/square-mcp-server](https://github.com/square/square-mcp-server) | TypeScript |
 | Stripe AI Toolkit | server | Productivity & business | [stripe/ai](https://github.com/stripe/ai) | TypeScript |
 | Supabase MCP | server | Databases & storage | [supabase/mcp](https://github.com/supabase/mcp) | TypeScript |
+| Supergateway | tool | Tools & utilities | [supercorp-ai/supergateway](https://github.com/supercorp-ai/supergateway) | TypeScript |
 | Tavily MCP | server | Web, search & browsers | [tavily-ai/tavily-mcp](https://github.com/tavily-ai/tavily-mcp) | TypeScript |
 | Terraform MCP Server | server | Cloud & infrastructure | [hashicorp/terraform-mcp-server](https://github.com/hashicorp/terraform-mcp-server) | Go |
 | Todoist MCP | server | Productivity & business | [Doist/todoist-mcp](https://github.com/Doist/todoist-mcp) | TypeScript |
 | Vault MCP Server | server | Cloud & infrastructure | [hashicorp/vault-mcp-server](https://github.com/hashicorp/vault-mcp-server) | Go |
+| Vectara MCP | server | AI, models & retrieval | [vectara/vectara-mcp](https://github.com/vectara/vectara-mcp) | Python |
 | Visual Studio Code | client | Clients & hosts | [microsoft/vscode](https://github.com/microsoft/vscode) | TypeScript |
 | Weaviate MCP Server | server | Databases & storage | [weaviate/mcp-server-weaviate](https://github.com/weaviate/mcp-server-weaviate) | — |
 | Zed | client | Clients & hosts | [zed-industries/zed](https://github.com/zed-industries/zed) | Rust |
