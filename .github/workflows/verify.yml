@@ -1,0 +1,33 @@
+name: Repository health
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Check every repository in the dataset
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Verify repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/verify.mjs
+
+      - name: Upload the health report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: health-report
+          path: reports/health.json
+          if-no-files-found: ignore

@@ -11,6 +11,9 @@
     "build": "node scripts/build.mjs",
     "validate": "node scripts/validate.mjs",
     "check": "node scripts/validate.mjs && node scripts/build.mjs --check",
+    "find": "node scripts/find.mjs",
+    "add": "node scripts/add.mjs",
+    "verify": "node scripts/verify.mjs",
     "test": "node scripts/validate.mjs && node scripts/build.mjs --check"
   },
   "keywords": [

@@ -14,6 +14,27 @@ npm run check      # both, plus "are the generated files up to date?"
 
 Node 18 or newer is all you need; there are no dependencies to install.
 
+### Finding and adding entries
+
+Three more commands make the index usable without reading JSON by hand. Each one takes flags;
+add `--help` to any of them for the full list.
+
+```bash
+npm run find -- --tag database          # search by tag, kind, category, language or text
+npm run find -- --list tags             # the tags in use, and how often
+npm run add -- --repo acme/acme-mcp --category databases-and-storage \
+    --description "Queries Acme tables and inspects schemas from an agent." \
+    --official true --tag database --tag sql
+npm run verify -- --limit 5             # check that repositories still exist
+```
+
+`npm run add` checks the repository on GitHub, inserts the object in `id` order without
+reformatting the rest of the file, bumps `updated`, and reverts everything if validation fails.
+`--official` has no default: only a human can decide whether a project is maintained by the
+vendor it talks to. `npm run verify` needs `GITHUB_TOKEN` to check every entry, because 106
+requests exceed the unauthenticated limit; [`ROADMAP.md`](ROADMAP.md) has the details of all
+three.
+
 ## Adding an entry
 
 1. Add one object to `entries` in [`data/servers.json`](data/servers.json), keeping the array sorted by `id`.
