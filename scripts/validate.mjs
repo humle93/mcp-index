@@ -46,11 +46,30 @@ function isHttpsUrl(value) {
   }
 }
 
-let data;
+let raw;
 try {
-  data = JSON.parse(await readFile(dataPath, "utf8"));
+  raw = await readFile(dataPath, "utf8");
 } catch (error) {
   console.error(`mcp-index: cannot read data/servers.json — ${error.message}`);
+  process.exit(1);
+}
+
+// The file must end with exactly one newline. Editing tools and API upload paths that
+// strip or double it turn into a spurious diff on the next change, so the shape is
+// checked here instead of being left to whoever writes the file.
+const trailingNewlines = raw.match(/\n*$/)[0].length;
+if (trailingNewlines !== 1) {
+  fail("data/servers.json", `must end with exactly one trailing newline (found ${trailingNewlines})`);
+}
+if (raw.includes("\r")) {
+  fail("data/servers.json", "must use LF line endings, not CRLF");
+}
+
+let data;
+try {
+  data = JSON.parse(raw);
+} catch (error) {
+  console.error(`mcp-index: cannot parse data/servers.json — ${error.message}`);
   process.exit(1);
 }
 
