@@ -10,13 +10,13 @@ Every entry is one object in [`data/servers.json`](data/servers.json). The table
 
 ```bash
 # list every server and its repository
-jq -r '.entries[] | select(.kind=="server") | "\\(.name)\\t\\(.repo)"' data/servers.json
+jq -r '.entries[] | select(.kind=="server") | "\(.name)\t\(.repo)"' data/servers.json
 
 # filter by tags (e.g. everything that touches databases)
-jq -r '.entries[] | select(.tags | index("database")) | "\\(.name) — \\(.description)"' data/servers.json
+jq -r '.entries[] | select(.tags | index("database")) | "\(.name) — \(.description)"' data/servers.json
 
 # print install commands that ship with an entry
-jq -r '.entries[] | select(.install) | "# \\(.name)\\n\\(.install)\\n"' data/servers.json
+jq -r '.entries[] | select(.install) | "# \(.name)\n\(.install)\n"' data/servers.json
 ```
 
 Each entry has this shape (see [`schema/index.schema.json`](schema/index.schema.json)):
