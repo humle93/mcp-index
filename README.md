@@ -2,7 +2,7 @@
 
 A curated, machine-readable index of **Model Context Protocol (MCP) servers, clients, frameworks and tools**.
 
-[![entries](https://img.shields.io/badge/entries-106-2f6f4f)](data/servers.json) [![official](https://img.shields.io/badge/official-93-2f6f4f)](#legend) [![license](https://img.shields.io/badge/license-MIT-2f6f4f)](LICENSE) [![CI](https://github.com/humle93/mcp-index/actions/workflows/ci.yml/badge.svg)](https://github.com/humle93/mcp-index/actions/workflows/ci.yml)
+[![entries](https://img.shields.io/badge/entries-117-2f6f4f)](data/servers.json) [![official](https://img.shields.io/badge/official-104-2f6f4f)](#legend) [![license](https://img.shields.io/badge/license-MIT-2f6f4f)](LICENSE) [![CI](https://github.com/humle93/mcp-index/actions/workflows/ci.yml/badge.svg)](https://github.com/humle93/mcp-index/actions/workflows/ci.yml)
 
 Every entry is one object in [`data/servers.json`](data/servers.json). The tables below are generated from it, so the JSON is the only place to edit and nothing in the docs can drift.
 
@@ -43,12 +43,12 @@ Each entry has this shape (see [`schema/index.schema.json`](schema/index.schema.
 - [Frameworks & SDKs](#frameworks-sdks) — 15
 - [Developer platforms & code](#developer-platforms-code) — 12
 - [Databases & storage](#databases-storage) — 19
-- [Cloud & infrastructure](#cloud-infrastructure) — 10
-- [Web, search & browsers](#web-search-browsers) — 9
-- [Productivity & business](#productivity-business) — 10
-- [AI, models & retrieval](#ai-models-retrieval) — 5
+- [Cloud & infrastructure](#cloud-infrastructure) — 13
+- [Web, search & browsers](#web-search-browsers) — 11
+- [Productivity & business](#productivity-business) — 11
+- [AI, models & retrieval](#ai-models-retrieval) — 8
 - [Clients & hosts](#clients-hosts) — 14
-- [Tools & utilities](#tools-utilities) — 10
+- [Tools & utilities](#tools-utilities) — 12
 - [Legend](#legend)
 - [Contributing](#contributing)
 
@@ -135,12 +135,15 @@ Cloud providers, containers, infrastructure as code and observability stacks.
 | Project | What it does | Language | Tags |
 | --- | --- | --- | --- |
 | [AWS MCP Servers](https://github.com/awslabs/mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | AWS-maintained suite covering documentation lookup, cost analysis, CDK and direct service APIs. | `Python` | `aws` `cloud` `cost` `iac` |
+| [Cloud Run MCP](https://github.com/GoogleCloudPlatform/cloud-run-mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Deploys apps and services to Google Cloud Run directly from an agent session. | `JavaScript` | `google-cloud` `cloud-run` `deploy` |
 | [Cloudflare MCP Servers](https://github.com/cloudflare/mcp-server-cloudflare) ![official](https://img.shields.io/badge/official-2f6f4f) | Servers for Workers, D1, R2, KV and Cloudflare observability data. | `TypeScript` | `cloudflare` `workers` `storage` |
 | [Kubernetes MCP Server (CNCF)](https://github.com/containers/kubernetes-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | CNCF-hosted server for Kubernetes and OpenShift that works against any cluster context. | `Go` | `kubernetes` `openshift` `devops` |
 | [gcloud MCP](https://github.com/googleapis/gcloud-mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Runs gcloud CLI commands for Google Cloud from an agent session. | `TypeScript` | `google-cloud` `gcloud` `cli` |
 | [Grafana MCP](https://github.com/grafana/mcp-grafana) ![official](https://img.shields.io/badge/official-2f6f4f) | Searches dashboards and queries Prometheus, Loki and alerting data from Grafana. | `Go` | `observability` `metrics` `monitoring` |
+| [Heroku MCP Server](https://github.com/heroku/heroku-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Runs Heroku CLI commands so an agent can create apps, read logs and manage add-ons. | `TypeScript` | `heroku` `paas` `deploy` |
 | [Kubernetes MCP Server](https://github.com/Flux159/mcp-server-kubernetes) | Lists, reads and manages Kubernetes resources with kubectl-style operations. | `TypeScript` | `kubernetes` `devops` |
 | [Microsoft MCP Catalog](https://github.com/microsoft/mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Microsoft's catalogue of official servers for Azure, Fabric, Dataverse and developer services. | `C#` | `microsoft` `azure` `cloud` |
+| [Netlify MCP Server](https://github.com/netlify/netlify-mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Creates, builds and deploys Netlify projects and manages their resources from an agent. | `TypeScript` | `netlify` `deploy` `hosting` |
 | [Sentry Toolkit](https://github.com/getsentry/toolkit) ![official](https://img.shields.io/badge/official-2f6f4f) | Sentry's AI toolkit: error and trace access plus an MCP server for issue triage. | `TypeScript` | `monitoring` `errors` |
 | [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Looks up provider documentation and registry modules so agents write correct Terraform. | `Go` | `terraform` `iac` |
 | [Vault MCP Server](https://github.com/hashicorp/vault-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Reads and writes HashiCorp Vault secrets and inspects mounts from an agent. | `Go` | `vault` `secrets` `security` |
@@ -153,10 +156,12 @@ Search APIs, crawlers and real browser control, for agents that need to read or 
 | --- | --- | --- | --- |
 | [Apify MCP Server](https://github.com/apify/apify-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Runs Apify actors — scrapers, crawlers and AI jobs — from any MCP client and returns their datasets. | `TypeScript` | `scraping` `actors` `automation` |
 | [Brave Search MCP](https://github.com/brave/brave-search-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Web, news and local search through the Brave Search API. | `TypeScript` | `search` `web` |
+| [Bright Data MCP](https://github.com/brightdata/brightdata-mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Searches, scrapes and structures public web data through Bright Data's proxy network. | `JavaScript` | `scraping` `search` `web-data` |
 | [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Drives a real Chrome instance for performance traces, network inspection and debugging. | `TypeScript` | `browser` `debugging` `performance` |
 | [Exa MCP Server](https://github.com/exa-labs/exa-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Neural web search, company research and page crawling through Exa's API. | `TypeScript` | `search` `research` |
 | [Firecrawl MCP Server](https://github.com/firecrawl/firecrawl-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Turns sites into clean Markdown and crawls them for agent consumption. | `JavaScript` | `scraping` `crawling` |
 | [Jina AI MCP](https://github.com/jina-ai/MCP) ![official](https://img.shields.io/badge/official-2f6f4f) | Jina's remote server for web search, page reading and embeddings. | `TypeScript` | `search` `embeddings` `reader` |
+| [Kagi MCP](https://github.com/kagisearch/kagimcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Searches the web and summarizes pages through Kagi's search and summarizer tools. | `Python` | `search` `summarizer` |
 | [Playwright MCP (community)](https://github.com/executeautomation/mcp-playwright) | Community Playwright server that adds API testing on top of browser automation. | `TypeScript` | `browser` `testing` `automation` |
 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Drives a browser through accessibility snapshots instead of screenshots, which keeps tokens down. | `TypeScript` | `browser` `automation` `testing` |
 | [Tavily MCP](https://github.com/tavily-ai/tavily-mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Search, extract and crawl endpoints tuned for agent research workflows. | `TypeScript` | `search` `research` |
@@ -173,6 +178,7 @@ Notes, chat, tickets, mail, calendars and payments — the systems where work ac
 | [mcp-atlassian](https://github.com/sooperset/mcp-atlassian) | Searches and edits Jira issues and Confluence pages from one server. | `Python` | `jira` `confluence` `issues` |
 | [Obsidian MCP](https://github.com/MarkusPfundstein/mcp-obsidian) | Reads and writes an Obsidian vault through its Local REST API plugin. | `Python` | `notes` `markdown` |
 | [Notion MCP Server](https://github.com/makenotion/notion-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Notion's official server for pages, databases and blocks through the Notion API. | `TypeScript` | `notes` `documents` |
+| [PayPal MCP Server](https://github.com/paypal/paypal-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Reads PayPal transactions, invoices and disputes from an agent session. | `JavaScript` | `payments` `commerce` |
 | [Slack MCP Server](https://github.com/korotovsky/slack-mcp-server) | Reads channels and threads and posts messages as a Slack user or bot. | `Go` | `slack` `chat` |
 | [Spotify MCP](https://github.com/varunneal/spotify-mcp) | Controls playback, playlists and search in Spotify. | `Python` | `music` `media` |
 | [Stripe AI Toolkit](https://github.com/stripe/ai) ![official](https://img.shields.io/badge/official-2f6f4f) | Stripe's toolkit, including an MCP server for customers, payments and documentation search. | `TypeScript` | `payments` `commerce` |
@@ -184,11 +190,14 @@ Model hubs, documentation retrieval and notebook access for agents that need ext
 
 | Project | What it does | Language | Tags |
 | --- | --- | --- | --- |
+| [Basic Memory](https://github.com/basicmachines-co/basic-memory) ![official](https://img.shields.io/badge/official-2f6f4f) | Stores notes as a local Markdown knowledge graph an agent can read and link later. | `Python` | `memory` `knowledge-graph` `markdown` |
 | [Context7](https://github.com/upstash/context7) ![official](https://img.shields.io/badge/official-2f6f4f) | Serves version-specific library documentation so generated code matches the installed release. | `TypeScript` | `documentation` `retrieval` |
 | [Gemini Notebook MCP](https://github.com/jacob-bd/gemini-notebook-mcp-cli) | Reads and writes Gemini Notebook sources and notes from the CLI, MCP or agent skills. | `Python` | `gemini` `notebooks` `cli` |
 | [Graphiti](https://github.com/getzep/graphiti) ![official](https://img.shields.io/badge/official-2f6f4f) | Builds a temporal knowledge graph for agent memory and ships an MCP server with it. | `Python` | `memory` `knowledge-graph` `retrieval` |
 | [Hugging Face MCP Server](https://github.com/huggingface/hf-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Searches models, datasets and Spaces on the Hugging Face Hub. | `TypeScript` | `models` `datasets` |
 | [Mem0](https://github.com/mem0ai/mem0) ![official](https://img.shields.io/badge/official-2f6f4f) | Memory layer for agents that ships its own MCP server for storing and recalling context. | `Python` | `memory` `retrieval` |
+| [Ragie MCP Server](https://github.com/ragieai/ragie-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Retrieves context from Ragie knowledge bases connected to Drive, Notion and Jira. | `JavaScript` | `retrieval` `rag` |
+| [Vectara MCP](https://github.com/vectara/vectara-mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Queries Vectara corpora with hybrid search and returns grounded answers. | `Python` | `rag` `retrieval` `search` |
 
 ## Clients & hosts
 
@@ -217,6 +226,7 @@ Inspectors, proxies, gateways and context helpers that sit around servers rather
 
 | Project | What it does | Language | Tags |
 | --- | --- | --- | --- |
+| [Airtable MCP CLI](https://github.com/Airtable/airtable-mcp-cli) ![official](https://img.shields.io/badge/official-2f6f4f) | Runs Airtable's hosted MCP server tools as scriptable terminal commands. | `TypeScript` | `airtable` `cli` `automation` |
 | [Context Mode](https://github.com/mksglu/context-mode) ![official](https://img.shields.io/badge/official-2f6f4f) | Keeps large tool output out of the context window by sandboxing it behind SQLite full-text search. | `JavaScript` | `context` `search` `tooling` |
 | [Docker MCP Gateway](https://github.com/docker/mcp-gateway) ![official](https://img.shields.io/badge/official-2f6f4f) | Runs containerised MCP servers behind one gateway with shared configuration and secrets. | `Go` | `docker` `gateway` |
 | [MarkItDown MCP](https://github.com/microsoft/markitdown) ![official](https://img.shields.io/badge/official-2f6f4f) | Converts PDFs, Office files and images to Markdown before they reach the model. | `Python` | `markdown` `conversion` `documents` |
@@ -227,6 +237,7 @@ Inspectors, proxies, gateways and context helpers that sit around servers rather
 | [mcpo](https://github.com/open-webui/mcpo) ![official](https://img.shields.io/badge/official-2f6f4f) | Wraps any stdio MCP server behind an OpenAPI endpoint for clients that cannot speak MCP. | `Python` | `proxy` `openapi` |
 | [MetaMCP](https://github.com/metatool-ai/metamcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Aggregates many MCP servers behind one endpoint with namespaces and a web UI. | `TypeScript` | `gateway` `aggregator` `docker` |
 | [Smithery CLI](https://github.com/arcadeai-labs/smithery-cli) ![official](https://img.shields.io/badge/official-2f6f4f) | Installs and manages MCP servers published to the Smithery registry. | `TypeScript` | `registry` `cli` |
+| [Supergateway](https://github.com/supercorp-ai/supergateway) ![official](https://img.shields.io/badge/official-2f6f4f) | Bridges stdio MCP servers to streamable HTTP and SSE, and back again. | `TypeScript` | `proxy` `transport` `gateway` |
 
 ## Legend
 
