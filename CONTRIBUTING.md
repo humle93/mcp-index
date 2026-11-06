@@ -124,9 +124,11 @@ that shows it is MCP. Reviewing a batch is then a matter of reading four lines p
 
 `npm run verify` only warns after 548 days without a push (`--stale-days`), which is deliberately
 lenient for entries that are already in the index. New entries hold a stricter line: a push within
-the last 12 months, or an explicit reason in the pull request for anything older — a release, a
-commit on the default branch, or a maintainer answering issues. Nothing in the index should be
-justified by age alone adequate for a protocol that is still moving.
+roughly the last year. Anything older needs its own reason in the pull request — a release, a
+commit on the default branch, or a maintainer answering issues. In the batch that filled the
+thinnest categories the oldest accepted entry was `paypal/paypal-mcp-server`, pushed 2025-10-28
+against a 2026-11-06 review date; every other entry had been pushed in the previous two weeks.
+That margin is why the date belongs in the pull request instead of in someone's memory.
 
 ### Cases that have been rejected in practice
 
