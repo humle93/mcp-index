@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/humle93/mcp-index/main/schema/index.schema.json",
+  "title": "MCP Index dataset",
+  "description": "Source of truth for the MCP Index. README.md and INDEX.md are generated from this file.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["updated", "categories", "entries"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the last review pass over the dataset (YYYY-MM-DD)."
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/category" }
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/entry" }
+    }
+  },
+  "$defs": {
+    "category": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "blurb"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Stable identifier referenced by entries[].category."
+        },
+        "title": { "type": "string", "minLength": 2 },
+        "blurb": { "type": "string", "minLength": 12 }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "repo", "category", "kind", "description", "official", "tags"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Unique, stable, lower-kebab-case identifier."
+        },
+        "name": { "type": "string", "minLength": 1, "maxLength": 60 },
+        "repo": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?/[A-Za-z0-9._-]+$",
+          "description": "GitHub repository as owner/name. Use the canonical (non-fork) repository."
+        },
+        "category": { "type": "string" },
+        "kind": {
+          "type": "string",
+          "enum": ["server", "client", "framework", "tool", "registry"]
+        },
+        "description": { "type": "string", "minLength": 12, "maxLength": 200 },
+        "official": {
+          "type": "boolean",
+          "description": "True only when the vendor or project the server talks to maintains it."
+        },
+        "language": { "type": "string", "minLength": 1 },
+        "transport": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "enum": ["stdio", "http", "sse", "websocket"] }
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": { "type": "string", "pattern": "^[a-z0-9]+(?:[.+-][a-z0-9]+)*$" }
+        },
+        "homepage": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "install": {
+          "type": "string",
+          "maxLength": 240,
+          "description": "Optional copy-pasteable install or run command."
+        }
+      }
+    }
+  }
+}
