@@ -78,6 +78,30 @@
       "tags": ["scraping", "actors", "automation"]
     },
     {
+      "id": "argocd-mcp",
+      "name": "Argo CD MCP",
+      "repo": "argoproj-labs/mcp-for-argocd",
+      "category": "developer-platforms",
+      "kind": "server",
+      "description": "Inspects and manages Argo CD applications, projects and sync operations.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["stdio"],
+      "tags": ["argocd", "kubernetes", "gitops"]
+    },
+    {
+      "id": "atlassian-mcp-server",
+      "name": "Atlassian MCP Server",
+      "repo": "atlassian/atlassian-mcp-server",
+      "category": "developer-platforms",
+      "kind": "server",
+      "description": "Atlassian's remote server for Jira, Confluence, Compass and Bitbucket, authenticated with OAuth.",
+      "official": true,
+      "language": "JavaScript",
+      "transport": ["http"],
+      "tags": ["jira", "confluence", "bitbucket", "oauth"]
+    },
+    {
       "id": "awslabs-mcp",
       "name": "AWS MCP Servers",
       "repo": "awslabs/mcp",
@@ -90,6 +114,18 @@
       "tags": ["aws", "cloud", "cost", "iac"]
     },
     {
+      "id": "bitwarden-mcp-server",
+      "name": "Bitwarden MCP Server",
+      "repo": "bitwarden/mcp-server",
+      "category": "productivity-and-business",
+      "kind": "server",
+      "description": "Lets an agent look up Bitwarden vault items and secrets.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["stdio"],
+      "tags": ["secrets", "security", "passwords"]
+    },
+    {
       "id": "brave-search-mcp-server",
       "name": "Brave Search MCP",
       "repo": "brave/brave-search-mcp-server",
@@ -100,6 +136,17 @@
       "language": "TypeScript",
       "transport": ["stdio", "http"],
       "tags": ["search", "web"]
+    },
+    {
+      "id": "cherry-studio",
+      "name": "Cherry Studio",
+      "repo": "CherryHQ/cherry-studio",
+      "category": "clients-and-hosts",
+      "kind": "client",
+      "description": "Desktop AI client with an MCP marketplace and per-assistant server selection.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["desktop", "chat", "marketplace"]
     },
     {
       "id": "chroma-mcp",
@@ -162,6 +209,17 @@
       "tags": ["cloudflare", "workers", "storage"]
     },
     {
+      "id": "cloudflare-workers-mcp",
+      "name": "Cloudflare Workers MCP",
+      "repo": "cloudflare/workers-mcp",
+      "category": "frameworks-and-sdks",
+      "kind": "framework",
+      "description": "Exposes a Cloudflare Worker's own functions as MCP tools for local clients.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["cloudflare", "workers", "json-rpc"]
+    },
+    {
       "id": "codebase-memory-mcp",
       "name": "Codebase Memory MCP",
       "repo": "DeusData/codebase-memory-mcp",
@@ -172,6 +230,29 @@
       "language": "C",
       "transport": ["stdio"],
       "tags": ["code-intelligence", "knowledge-graph"]
+    },
+    {
+      "id": "codex",
+      "name": "OpenAI Codex CLI",
+      "repo": "openai/codex",
+      "category": "clients-and-hosts",
+      "kind": "client",
+      "description": "OpenAI's terminal coding agent, with MCP servers configurable as tool providers.",
+      "official": true,
+      "language": "Rust",
+      "tags": ["cli", "coding-agent"]
+    },
+    {
+      "id": "containers-kubernetes-mcp",
+      "name": "Kubernetes MCP Server (CNCF)",
+      "repo": "containers/kubernetes-mcp-server",
+      "category": "cloud-and-infrastructure",
+      "kind": "server",
+      "description": "CNCF-hosted server for Kubernetes and OpenShift that works against any cluster context.",
+      "official": true,
+      "language": "Go",
+      "transport": ["stdio"],
+      "tags": ["kubernetes", "openshift", "devops"]
     },
     {
       "id": "context-mode",
@@ -208,6 +289,29 @@
       "official": true,
       "language": "TypeScript",
       "tags": ["ide", "coding-agent"]
+    },
+    {
+      "id": "couchbase-mcp-server",
+      "name": "Couchbase MCP Server",
+      "repo": "couchbase/mcp-server-couchbase",
+      "category": "databases-and-storage",
+      "kind": "server",
+      "description": "Queries Couchbase and Capella clusters and inspects buckets from an agent.",
+      "official": true,
+      "language": "Python",
+      "transport": ["stdio"],
+      "tags": ["couchbase", "database", "nosql"]
+    },
+    {
+      "id": "crush",
+      "name": "Crush",
+      "repo": "charmbracelet/crush",
+      "category": "clients-and-hosts",
+      "kind": "client",
+      "description": "Charm's terminal coding agent, with MCP servers configured per project.",
+      "official": true,
+      "language": "Go",
+      "tags": ["cli", "coding-agent", "tui"]
     },
     {
       "id": "csharp-sdk",
@@ -278,6 +382,18 @@
       "tags": ["python", "framework"]
     },
     {
+      "id": "fastmcp-typescript",
+      "name": "FastMCP (TypeScript)",
+      "repo": "punkpeye/fastmcp",
+      "category": "frameworks-and-sdks",
+      "kind": "framework",
+      "description": "TypeScript framework with decorators, sessions and auth for building MCP servers quickly.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["typescript", "framework"],
+      "install": "npm install fastmcp"
+    },
+    {
       "id": "figma-context-mcp",
       "name": "Figma Context MCP",
       "repo": "GLips/Figma-Context-MCP",
@@ -300,6 +416,29 @@
       "language": "JavaScript",
       "transport": ["stdio", "http"],
       "tags": ["scraping", "crawling"]
+    },
+    {
+      "id": "gcloud-mcp",
+      "name": "gcloud MCP",
+      "repo": "googleapis/gcloud-mcp",
+      "category": "cloud-and-infrastructure",
+      "kind": "server",
+      "description": "Runs gcloud CLI commands for Google Cloud from an agent session.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["stdio"],
+      "tags": ["google-cloud", "gcloud", "cli"]
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "repo": "google-gemini/gemini-cli",
+      "category": "clients-and-hosts",
+      "kind": "client",
+      "description": "Google's terminal agent, which loads MCP servers from its settings file.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["cli", "coding-agent", "gemini"]
     },
     {
       "id": "gemini-notebook-mcp-cli",
@@ -384,6 +523,17 @@
       "tags": ["observability", "metrics", "monitoring"]
     },
     {
+      "id": "graphiti",
+      "name": "Graphiti",
+      "repo": "getzep/graphiti",
+      "category": "ai-and-memory",
+      "kind": "server",
+      "description": "Builds a temporal knowledge graph for agent memory and ships an MCP server with it.",
+      "official": true,
+      "language": "Python",
+      "tags": ["memory", "knowledge-graph", "retrieval"]
+    },
+    {
       "id": "hf-mcp-server",
       "name": "Hugging Face MCP Server",
       "repo": "huggingface/hf-mcp-server",
@@ -405,6 +555,30 @@
       "official": true,
       "language": "Java",
       "tags": ["sdk", "java"]
+    },
+    {
+      "id": "jenkins-mcp-server",
+      "name": "Jenkins MCP Server",
+      "repo": "jenkinsci/mcp-server-plugin",
+      "category": "developer-platforms",
+      "kind": "server",
+      "description": "Jenkins plugin that publishes jobs, builds and logs as MCP tools over HTTP.",
+      "official": true,
+      "language": "Java",
+      "transport": ["http"],
+      "tags": ["jenkins", "ci", "builds"]
+    },
+    {
+      "id": "jina-mcp",
+      "name": "Jina AI MCP",
+      "repo": "jina-ai/MCP",
+      "category": "web-and-search",
+      "kind": "server",
+      "description": "Jina's remote server for web search, page reading and embeddings.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["http"],
+      "tags": ["search", "embeddings", "reader"]
     },
     {
       "id": "kotlin-sdk",
@@ -430,6 +604,17 @@
       "tags": ["kubernetes", "devops"]
     },
     {
+      "id": "librechat",
+      "name": "LibreChat",
+      "repo": "LibreChat-AI/LibreChat",
+      "category": "clients-and-hosts",
+      "kind": "client",
+      "description": "Self-hosted chat platform whose agents can attach MCP servers as tools.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["self-hosted", "chat", "agents"]
+    },
+    {
       "id": "linear-mcp-server",
       "name": "Linear MCP Server",
       "repo": "jerhadf/linear-mcp-server",
@@ -440,6 +625,17 @@
       "language": "JavaScript",
       "transport": ["stdio"],
       "tags": ["issues", "project-management"]
+    },
+    {
+      "id": "lobehub",
+      "name": "LobeHub",
+      "repo": "lobehub/lobehub",
+      "category": "clients-and-hosts",
+      "kind": "client",
+      "description": "Agent workspace and chat platform that installs MCP plugins from a built-in marketplace.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["agents", "chat", "marketplace"]
     },
     {
       "id": "magic-mcp",
@@ -454,6 +650,19 @@
       "tags": ["ui", "components", "design"]
     },
     {
+      "id": "markitdown-mcp",
+      "name": "MarkItDown MCP",
+      "repo": "microsoft/markitdown",
+      "category": "tools-and-utilities",
+      "kind": "server",
+      "description": "Converts PDFs, Office files and images to Markdown before they reach the model.",
+      "official": true,
+      "language": "Python",
+      "transport": ["stdio"],
+      "tags": ["markdown", "conversion", "documents"],
+      "install": "uvx markitdown-mcp"
+    },
+    {
       "id": "mcp-atlassian",
       "name": "mcp-atlassian",
       "repo": "sooperset/mcp-atlassian",
@@ -464,6 +673,51 @@
       "language": "Python",
       "transport": ["stdio", "sse"],
       "tags": ["jira", "confluence", "issues"]
+    },
+    {
+      "id": "mcp-context-forge",
+      "name": "MCP Context Forge",
+      "repo": "IBM/mcp-context-forge",
+      "category": "tools-and-utilities",
+      "kind": "tool",
+      "description": "IBM's gateway, registry and proxy that fronts MCP, A2A and REST APIs with guardrails.",
+      "official": true,
+      "language": "Python",
+      "tags": ["gateway", "registry", "proxy", "guardrails"]
+    },
+    {
+      "id": "mcp-framework",
+      "name": "MCP Framework",
+      "repo": "QuantGeekDev/mcp-framework",
+      "category": "frameworks-and-sdks",
+      "kind": "framework",
+      "description": "Opinionated TypeScript framework that turns decorated classes into MCP tools.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["typescript", "framework"]
+    },
+    {
+      "id": "mcp-go",
+      "name": "mcp-go",
+      "repo": "mark3labs/mcp-go",
+      "category": "frameworks-and-sdks",
+      "kind": "framework",
+      "description": "Go library for building MCP servers and clients outside the official SDKs.",
+      "official": true,
+      "language": "Go",
+      "tags": ["go", "sdk", "library"]
+    },
+    {
+      "id": "mcp-handler",
+      "name": "MCP Handler",
+      "repo": "vercel-labs/mcp-handler",
+      "category": "frameworks-and-sdks",
+      "kind": "framework",
+      "description": "Vercel's adapter that mounts an MCP endpoint inside Next.js, Nuxt and SvelteKit apps.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["nextjs", "vercel", "http"],
+      "install": "npm install mcp-handler"
     },
     {
       "id": "mcp-inspector",
@@ -562,6 +816,28 @@
       "tags": ["database", "sql", "google-cloud"]
     },
     {
+      "id": "mcp-use",
+      "name": "mcp-use",
+      "repo": "mcp-use/mcp-use",
+      "category": "frameworks-and-sdks",
+      "kind": "framework",
+      "description": "Full-stack framework for MCP servers and apps, with a client that runs across hosts.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["typescript", "framework", "apps"]
+    },
+    {
+      "id": "mcpb",
+      "name": "MCPB Desktop Extensions",
+      "repo": "modelcontextprotocol/mcpb",
+      "category": "tools-and-utilities",
+      "kind": "tool",
+      "description": "Packages a local MCP server as a one-click desktop extension (formerly DXT).",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["packaging", "desktop", "distribution"]
+    },
+    {
       "id": "mcpo",
       "name": "mcpo",
       "repo": "open-webui/mcpo",
@@ -571,6 +847,28 @@
       "official": true,
       "language": "Python",
       "tags": ["proxy", "openapi"]
+    },
+    {
+      "id": "mem0",
+      "name": "Mem0",
+      "repo": "mem0ai/mem0",
+      "category": "ai-and-memory",
+      "kind": "server",
+      "description": "Memory layer for agents that ships its own MCP server for storing and recalling context.",
+      "official": true,
+      "language": "Python",
+      "tags": ["memory", "retrieval"]
+    },
+    {
+      "id": "metamcp",
+      "name": "MetaMCP",
+      "repo": "metatool-ai/metamcp",
+      "category": "tools-and-utilities",
+      "kind": "tool",
+      "description": "Aggregates many MCP servers behind one endpoint with namespaces and a web UI.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["gateway", "aggregator", "docker"]
     },
     {
       "id": "microsoft-mcp",
@@ -622,6 +920,19 @@
       "tags": ["graph-database", "cypher"]
     },
     {
+      "id": "neon-mcp-server",
+      "name": "Neon MCP Server",
+      "repo": "neondatabase/mcp-server-neon",
+      "category": "databases-and-storage",
+      "kind": "server",
+      "description": "Creates Neon projects and branches and runs SQL through the Neon management API.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["stdio", "http"],
+      "tags": ["postgres", "serverless", "database"],
+      "install": "npx -y @neondatabase/mcp-server-neon start"
+    },
+    {
       "id": "notion-mcp-server",
       "name": "Notion MCP Server",
       "repo": "makenotion/notion-mcp-server",
@@ -632,6 +943,53 @@
       "language": "TypeScript",
       "transport": ["stdio", "http"],
       "tags": ["notes", "documents"]
+    },
+    {
+      "id": "open-webui",
+      "name": "Open WebUI",
+      "repo": "open-webui/open-webui",
+      "category": "clients-and-hosts",
+      "kind": "client",
+      "description": "Self-hosted chat interface that reaches MCP servers through its mcpo bridge.",
+      "official": true,
+      "language": "Svelte",
+      "tags": ["self-hosted", "chat", "web-ui"]
+    },
+    {
+      "id": "opensearch-mcp-server",
+      "name": "OpenSearch MCP Server",
+      "repo": "opensearch-project/opensearch-mcp-server-py",
+      "category": "databases-and-storage",
+      "kind": "server",
+      "description": "Searches OpenSearch clusters and runs queries through the OpenSearch Python client.",
+      "official": true,
+      "language": "Python",
+      "transport": ["stdio"],
+      "tags": ["search", "indexing", "opensearch"]
+    },
+    {
+      "id": "oracle-mcp",
+      "name": "Oracle MCP Servers",
+      "repo": "oracle/mcp",
+      "category": "databases-and-storage",
+      "kind": "server",
+      "description": "Oracle's suite of servers for SQLcl, database administration and Oracle Cloud resources.",
+      "official": true,
+      "language": "Python",
+      "transport": ["stdio"],
+      "tags": ["oracle", "sql", "database"]
+    },
+    {
+      "id": "pinecone-mcp",
+      "name": "Pinecone MCP",
+      "repo": "pinecone-io/pinecone-mcp",
+      "category": "databases-and-storage",
+      "kind": "server",
+      "description": "Connects Pinecone projects so assistants can search indexes and upsert vectors.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["stdio"],
+      "tags": ["vector-database", "search"]
     },
     {
       "id": "playwright-mcp",
@@ -659,6 +1017,18 @@
       "tags": ["postgres", "sql", "performance"]
     },
     {
+      "id": "postman-mcp-server",
+      "name": "Postman MCP Server",
+      "repo": "postmanlabs/postman-mcp-server",
+      "category": "developer-platforms",
+      "kind": "server",
+      "description": "Searches Postman collections, environments and OpenAPI specs and runs requests.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["stdio", "http"],
+      "tags": ["api", "openapi", "testing"]
+    },
+    {
       "id": "python-sdk",
       "name": "MCP Python SDK",
       "repo": "modelcontextprotocol/python-sdk",
@@ -680,6 +1050,17 @@
       "language": "Python",
       "transport": ["stdio"],
       "tags": ["vector-database", "embeddings"]
+    },
+    {
+      "id": "qwen-code",
+      "name": "Qwen Code",
+      "repo": "QwenLM/qwen-code",
+      "category": "clients-and-hosts",
+      "kind": "client",
+      "description": "Qwen's terminal coding agent, forked from Gemini CLI with MCP support intact.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["cli", "coding-agent", "qwen"]
     },
     {
       "id": "rust-sdk",
@@ -716,6 +1097,18 @@
       "tags": ["code-intelligence", "refactoring"]
     },
     {
+      "id": "singlestore-mcp-server",
+      "name": "SingleStore MCP Server",
+      "repo": "singlestore-labs/mcp-server-singlestore",
+      "category": "databases-and-storage",
+      "kind": "server",
+      "description": "Manages SingleStore workspaces, databases and queries through the management API.",
+      "official": true,
+      "language": "Python",
+      "transport": ["stdio"],
+      "tags": ["sql", "database", "analytics"]
+    },
+    {
       "id": "slack-mcp-server",
       "name": "Slack MCP Server",
       "repo": "korotovsky/slack-mcp-server",
@@ -740,6 +1133,30 @@
       "install": "npx -y @smithery/cli@latest mcp add"
     },
     {
+      "id": "snowflake-mcp",
+      "name": "Snowflake MCP",
+      "repo": "Snowflake-Labs/mcp",
+      "category": "databases-and-storage",
+      "kind": "server",
+      "description": "Snowflake's server for Cortex AI, SQL orchestration and semantic views over warehouse data.",
+      "official": true,
+      "language": "Python",
+      "transport": ["stdio"],
+      "tags": ["snowflake", "sql", "analytics"]
+    },
+    {
+      "id": "sonarqube-mcp-server",
+      "name": "SonarQube MCP Server",
+      "repo": "SonarSource/sonarqube-mcp-server",
+      "category": "developer-platforms",
+      "kind": "server",
+      "description": "Runs SonarQube analyses and reads code quality findings from an agent.",
+      "official": true,
+      "language": "Java",
+      "transport": ["stdio"],
+      "tags": ["code-quality", "static-analysis", "security"]
+    },
+    {
       "id": "spotify-mcp",
       "name": "Spotify MCP",
       "repo": "varunneal/spotify-mcp",
@@ -750,6 +1167,18 @@
       "language": "Python",
       "transport": ["stdio"],
       "tags": ["music", "media"]
+    },
+    {
+      "id": "square-mcp-server",
+      "name": "Square MCP Server",
+      "repo": "square/square-mcp-server",
+      "category": "developer-platforms",
+      "kind": "server",
+      "description": "Reads Square payments, orders, customers and catalog data.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["stdio"],
+      "tags": ["payments", "commerce"]
     },
     {
       "id": "stripe-ai",
@@ -800,6 +1229,18 @@
       "tags": ["terraform", "iac"]
     },
     {
+      "id": "todoist-mcp",
+      "name": "Todoist MCP",
+      "repo": "Doist/todoist-mcp",
+      "category": "productivity-and-business",
+      "kind": "server",
+      "description": "Doist's tools for letting agents read and change Todoist tasks and projects.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["stdio"],
+      "tags": ["tasks", "todoist"]
+    },
+    {
       "id": "typescript-sdk",
       "name": "MCP TypeScript SDK",
       "repo": "modelcontextprotocol/typescript-sdk",
@@ -809,6 +1250,50 @@
       "official": true,
       "language": "TypeScript",
       "tags": ["sdk", "typescript"]
+    },
+    {
+      "id": "vault-mcp-server",
+      "name": "Vault MCP Server",
+      "repo": "hashicorp/vault-mcp-server",
+      "category": "cloud-and-infrastructure",
+      "kind": "server",
+      "description": "Reads and writes HashiCorp Vault secrets and inspects mounts from an agent.",
+      "official": true,
+      "language": "Go",
+      "transport": ["stdio"],
+      "tags": ["vault", "secrets", "security"]
+    },
+    {
+      "id": "vscode",
+      "name": "Visual Studio Code",
+      "repo": "microsoft/vscode",
+      "category": "clients-and-hosts",
+      "kind": "client",
+      "description": "Editor with built-in MCP support, so agent mode can call local and remote servers.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["editor", "ide", "agent-mode"]
+    },
+    {
+      "id": "weaviate-mcp-server",
+      "name": "Weaviate MCP Server",
+      "repo": "weaviate/mcp-server-weaviate",
+      "category": "databases-and-storage",
+      "kind": "server",
+      "description": "Searches and manages Weaviate collections so agents can store and retrieve vectorised content.",
+      "official": true,
+      "tags": ["vector-database", "embeddings"]
+    },
+    {
+      "id": "zed",
+      "name": "Zed",
+      "repo": "zed-industries/zed",
+      "category": "clients-and-hosts",
+      "kind": "client",
+      "description": "Rust editor whose agent panel loads MCP servers as context servers.",
+      "official": true,
+      "language": "Rust",
+      "tags": ["editor", "agent", "rust"]
     }
   ]
 }
