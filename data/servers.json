@@ -66,6 +66,18 @@
       "tags": ["desktop", "agent", "knowledge-base"]
     },
     {
+      "id": "airtable-mcp-cli",
+      "name": "Airtable MCP CLI",
+      "repo": "Airtable/airtable-mcp-cli",
+      "category": "tools-and-utilities",
+      "kind": "tool",
+      "description": "Runs Airtable's hosted MCP server tools as scriptable terminal commands.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["http"],
+      "tags": ["airtable", "cli", "automation"]
+    },
+    {
       "id": "apify-mcp-server",
       "name": "Apify MCP Server",
       "repo": "apify/apify-mcp-server",
@@ -114,6 +126,18 @@
       "tags": ["aws", "cloud", "cost", "iac"]
     },
     {
+      "id": "basic-memory",
+      "name": "Basic Memory",
+      "repo": "basicmachines-co/basic-memory",
+      "category": "ai-and-memory",
+      "kind": "server",
+      "description": "Stores notes as a local Markdown knowledge graph an agent can read and link later.",
+      "official": true,
+      "language": "Python",
+      "transport": ["stdio"],
+      "tags": ["memory", "knowledge-graph", "markdown"]
+    },
+    {
       "id": "bitwarden-mcp-server",
       "name": "Bitwarden MCP Server",
       "repo": "bitwarden/mcp-server",
@@ -136,6 +160,18 @@
       "language": "TypeScript",
       "transport": ["stdio", "http"],
       "tags": ["search", "web"]
+    },
+    {
+      "id": "brightdata-mcp",
+      "name": "Bright Data MCP",
+      "repo": "brightdata/brightdata-mcp",
+      "category": "web-and-search",
+      "kind": "server",
+      "description": "Searches, scrapes and structures public web data through Bright Data's proxy network.",
+      "official": true,
+      "language": "JavaScript",
+      "transport": ["stdio", "http"],
+      "tags": ["scraping", "search", "web-data"]
     },
     {
       "id": "cherry-studio",
@@ -195,6 +231,18 @@
       "official": true,
       "language": "TypeScript",
       "tags": ["vscode", "coding-agent"]
+    },
+    {
+      "id": "cloud-run-mcp",
+      "name": "Cloud Run MCP",
+      "repo": "GoogleCloudPlatform/cloud-run-mcp",
+      "category": "cloud-and-infrastructure",
+      "kind": "server",
+      "description": "Deploys apps and services to Google Cloud Run directly from an agent session.",
+      "official": true,
+      "language": "JavaScript",
+      "transport": ["stdio"],
+      "tags": ["google-cloud", "cloud-run", "deploy"]
     },
     {
       "id": "cloudflare-mcp-server",
@@ -534,6 +582,18 @@
       "tags": ["memory", "knowledge-graph", "retrieval"]
     },
     {
+      "id": "heroku-mcp-server",
+      "name": "Heroku MCP Server",
+      "repo": "heroku/heroku-mcp-server",
+      "category": "cloud-and-infrastructure",
+      "kind": "server",
+      "description": "Runs Heroku CLI commands so an agent can create apps, read logs and manage add-ons.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["stdio"],
+      "tags": ["heroku", "paas", "deploy"]
+    },
+    {
       "id": "hf-mcp-server",
       "name": "Hugging Face MCP Server",
       "repo": "huggingface/hf-mcp-server",
@@ -579,6 +639,18 @@
       "language": "TypeScript",
       "transport": ["http"],
       "tags": ["search", "embeddings", "reader"]
+    },
+    {
+      "id": "kagimcp",
+      "name": "Kagi MCP",
+      "repo": "kagisearch/kagimcp",
+      "category": "web-and-search",
+      "kind": "server",
+      "description": "Searches the web and summarizes pages through Kagi's search and summarizer tools.",
+      "official": true,
+      "language": "Python",
+      "transport": ["stdio"],
+      "tags": ["search", "summarizer"]
     },
     {
       "id": "kotlin-sdk",
@@ -933,6 +1005,18 @@
       "install": "npx -y @neondatabase/mcp-server-neon start"
     },
     {
+      "id": "netlify-mcp",
+      "name": "Netlify MCP Server",
+      "repo": "netlify/netlify-mcp",
+      "category": "cloud-and-infrastructure",
+      "kind": "server",
+      "description": "Creates, builds and deploys Netlify projects and manages their resources from an agent.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["stdio", "http"],
+      "tags": ["netlify", "deploy", "hosting"]
+    },
+    {
       "id": "notion-mcp-server",
       "name": "Notion MCP Server",
       "repo": "makenotion/notion-mcp-server",
@@ -978,6 +1062,18 @@
       "language": "Python",
       "transport": ["stdio"],
       "tags": ["oracle", "sql", "database"]
+    },
+    {
+      "id": "paypal-mcp-server",
+      "name": "PayPal MCP Server",
+      "repo": "paypal/paypal-mcp-server",
+      "category": "productivity-and-business",
+      "kind": "server",
+      "description": "Reads PayPal transactions, invoices and disputes from an agent session.",
+      "official": true,
+      "language": "JavaScript",
+      "transport": ["stdio"],
+      "tags": ["payments", "commerce"]
     },
     {
       "id": "pinecone-mcp",
@@ -1061,6 +1157,18 @@
       "official": true,
       "language": "TypeScript",
       "tags": ["cli", "coding-agent", "qwen"]
+    },
+    {
+      "id": "ragie-mcp-server",
+      "name": "Ragie MCP Server",
+      "repo": "ragieai/ragie-mcp-server",
+      "category": "ai-and-memory",
+      "kind": "server",
+      "description": "Retrieves context from Ragie knowledge bases connected to Drive, Notion and Jira.",
+      "official": true,
+      "language": "JavaScript",
+      "transport": ["stdio", "http"],
+      "tags": ["retrieval", "rag"]
     },
     {
       "id": "rust-sdk",
@@ -1205,6 +1313,17 @@
       "tags": ["postgres", "supabase", "database"]
     },
     {
+      "id": "supergateway",
+      "name": "Supergateway",
+      "repo": "supercorp-ai/supergateway",
+      "category": "tools-and-utilities",
+      "kind": "tool",
+      "description": "Bridges stdio MCP servers to streamable HTTP and SSE, and back again.",
+      "official": true,
+      "language": "TypeScript",
+      "tags": ["proxy", "transport", "gateway"]
+    },
+    {
       "id": "tavily-mcp",
       "name": "Tavily MCP",
       "repo": "tavily-ai/tavily-mcp",
@@ -1262,6 +1381,18 @@
       "language": "Go",
       "transport": ["stdio"],
       "tags": ["vault", "secrets", "security"]
+    },
+    {
+      "id": "vectara-mcp",
+      "name": "Vectara MCP",
+      "repo": "vectara/vectara-mcp",
+      "category": "ai-and-memory",
+      "kind": "server",
+      "description": "Queries Vectara corpora with hybrid search and returns grounded answers.",
+      "official": true,
+      "language": "Python",
+      "transport": ["stdio"],
+      "tags": ["rag", "retrieval", "search"]
     },
     {
       "id": "vscode",
