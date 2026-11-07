@@ -2,7 +2,7 @@
 
 A curated, machine-readable index of **Model Context Protocol (MCP) servers, clients, frameworks and tools**.
 
-[![entries](https://img.shields.io/badge/entries-117-2f6f4f)](data/servers.json) [![official](https://img.shields.io/badge/official-104-2f6f4f)](#legend) [![license](https://img.shields.io/badge/license-MIT-2f6f4f)](LICENSE) [![CI](https://github.com/humle93/mcp-index/actions/workflows/ci.yml/badge.svg)](https://github.com/humle93/mcp-index/actions/workflows/ci.yml)
+[![entries](https://img.shields.io/badge/entries-118-2f6f4f)](data/servers.json) [![official](https://img.shields.io/badge/official-105-2f6f4f)](#legend) [![license](https://img.shields.io/badge/license-MIT-2f6f4f)](LICENSE) [![CI](https://github.com/humle93/mcp-index/actions/workflows/ci.yml/badge.svg)](https://github.com/humle93/mcp-index/actions/workflows/ci.yml)
 
 Every entry is one object in [`data/servers.json`](data/servers.json). The tables below are generated from it, so the JSON is the only place to edit and nothing in the docs can drift.
 
@@ -48,7 +48,7 @@ Each entry has this shape (see [`schema/index.schema.json`](schema/index.schema.
 - [Productivity & business](#productivity-business) — 11
 - [AI, models & retrieval](#ai-models-retrieval) — 8
 - [Clients & hosts](#clients-hosts) — 14
-- [Tools & utilities](#tools-utilities) — 12
+- [Tools & utilities](#tools-utilities) — 13
 - [Legend](#legend)
 - [Contributing](#contributing)
 
@@ -229,6 +229,7 @@ Inspectors, proxies, gateways and context helpers that sit around servers rather
 | [Airtable MCP CLI](https://github.com/Airtable/airtable-mcp-cli) ![official](https://img.shields.io/badge/official-2f6f4f) | Runs Airtable's hosted MCP server tools as scriptable terminal commands. | `TypeScript` | `airtable` `cli` `automation` |
 | [Context Mode](https://github.com/mksglu/context-mode) ![official](https://img.shields.io/badge/official-2f6f4f) | Keeps large tool output out of the context window by sandboxing it behind SQLite full-text search. | `JavaScript` | `context` `search` `tooling` |
 | [Docker MCP Gateway](https://github.com/docker/mcp-gateway) ![official](https://img.shields.io/badge/official-2f6f4f) | Runs containerised MCP servers behind one gateway with shared configuration and secrets. | `Go` | `docker` `gateway` |
+| [ICHI MCP Server](https://github.com/bernik-bot/ichi-mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Gives an agent the current internet-wide cyber threat level, band (NORMAL–CRITICAL), recent critical-vulnerability advisories, and source-feed health from the ICHI public API. | `Python` | `cybersecurity` `threat-intelligence` `monitoring` |
 | [MarkItDown MCP](https://github.com/microsoft/markitdown) ![official](https://img.shields.io/badge/official-2f6f4f) | Converts PDFs, Office files and images to Markdown before they reach the model. | `Python` | `markdown` `conversion` `documents` |
 | [MCP Context Forge](https://github.com/IBM/mcp-context-forge) ![official](https://img.shields.io/badge/official-2f6f4f) | IBM's gateway, registry and proxy that fronts MCP, A2A and REST APIs with guardrails. | `Python` | `gateway` `registry` `proxy` `guardrails` |
 | [MCP Inspector](https://github.com/modelcontextprotocol/inspector) ![official](https://img.shields.io/badge/official-2f6f4f) | Interactive UI and CLI for exercising a server's tools, prompts and resources while developing. | `TypeScript` | `debugging` `testing` |

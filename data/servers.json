@@ -606,6 +606,17 @@
       "tags": ["models", "datasets"]
     },
     {
+      "id": "ichi-mcp",
+      "name": "ICHI MCP Server",
+      "repo": "bernik-bot/ichi-mcp",
+      "category": "tools-and-utilities",
+      "kind": "server",
+      "description": "Gives an agent the current internet-wide cyber threat level, band (NORMAL–CRITICAL), recent critical-vulnerability advisories, and source-feed health from the ICHI public API.",
+      "official": true,
+      "language": "Python",
+      "tags": ["cybersecurity", "threat-intelligence", "monitoring"]
+    },
+    {
       "id": "java-sdk",
       "name": "MCP Java SDK",
       "repo": "modelcontextprotocol/java-sdk",

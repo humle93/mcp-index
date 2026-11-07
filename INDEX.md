@@ -1,6 +1,6 @@
 # Index — every entry
 
-All 117 entries, A–Z. Generated from [`data/servers.json`](data/servers.json); see the [README](README.md) for categories and descriptions.
+All 118 entries, A–Z. Generated from [`data/servers.json`](data/servers.json); see the [README](README.md) for categories and descriptions.
 
 | Project | Kind | Category | Repository | Language |
 | --- | --- | --- | --- | --- |
@@ -46,6 +46,7 @@ All 117 entries, A–Z. Generated from [`data/servers.json`](data/servers.json);
 | Graphiti | server | AI, models & retrieval | [getzep/graphiti](https://github.com/getzep/graphiti) | Python |
 | Heroku MCP Server | server | Cloud & infrastructure | [heroku/heroku-mcp-server](https://github.com/heroku/heroku-mcp-server) | TypeScript |
 | Hugging Face MCP Server | server | AI, models & retrieval | [huggingface/hf-mcp-server](https://github.com/huggingface/hf-mcp-server) | TypeScript |
+| ICHI MCP Server | server | Tools & utilities | [bernik-bot/ichi-mcp](https://github.com/bernik-bot/ichi-mcp) | Python |
 | Jenkins MCP Server | server | Developer platforms & code | [jenkinsci/mcp-server-plugin](https://github.com/jenkinsci/mcp-server-plugin) | Java |
 | Jina AI MCP | server | Web, search & browsers | [jina-ai/MCP](https://github.com/jina-ai/MCP) | TypeScript |
 | Kagi MCP | server | Web, search & browsers | [kagisearch/kagimcp](https://github.com/kagisearch/kagimcp) | Python |
