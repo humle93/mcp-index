@@ -6,9 +6,9 @@
 //       --description "Queries Acme tables and inspects schemas from an agent." \
 //       --official true --tag database --tag sql
 //
-// It reads the repository from GitHub to check that it exists, is not archived and to fill in
-// the language, then inserts the object in id order, bumps "updated", validates, regenerates
-// README.md and INDEX.md, and reverts everything if any of that fails.
+// It reads the repository from GitHub to check that it exists and is neither archived nor disabled,
+// and to fill in the language, then inserts the object in id order, bumps "updated", validates,
+// regenerates README.md and INDEX.md, and reverts everything if any of that fails.
 //
 // Use --dry-run to see the object without writing.
 
@@ -156,13 +156,28 @@ async function repoMetadata(repo) {
 
   if (response.status === 404) fail(`${repo} does not exist on GitHub (or is private)`);
   if (response.status === 403 || response.status === 429) {
-    console.warn(`warning  GitHub API answered ${response.status}; skipping the remote check`);
-    return null;
+    const body = await response.json().catch(() => null);
+    const blocked = body?.block?.reason;
+    // GitHub answers a blocked repository with 403 and a "block" object instead of 404: disabled,
+    // DMCA takedown, or blocked by the owner. None of those can become an entry.
+    if (blocked) {
+      const why = blocked === "disabled" ? "; disabled repositories do not belong in the index" : "";
+      fail(`${repo} is blocked on GitHub (${blocked})${why}`);
+    }
+    const rateLimited = response.status === 429 || response.headers.get("x-ratelimit-remaining") === "0";
+    if (rateLimited) {
+      console.warn(
+        `warning  GitHub API rate limit reached; the archived/disabled check for ${repo} did not run — set GITHUB_TOKEN and repeat before committing`,
+      );
+      return null;
+    }
+    fail(`GitHub answered ${response.status} for ${repo}${body?.message ? ` — ${body.message}` : ""}`);
   }
   if (!response.ok) fail(`GitHub answered ${response.status} for ${repo}`);
 
   const metadata = await response.json();
   if (metadata.archived) fail(`${repo} is archived; archived projects do not belong in the index`);
+  if (metadata.disabled) fail(`${repo} is disabled; disabled repositories do not belong in the index`);
   if (metadata.full_name && metadata.full_name.toLowerCase() !== repo.toLowerCase()) {
     fail(`${repo} has moved to ${metadata.full_name}; use that instead`);
   }
