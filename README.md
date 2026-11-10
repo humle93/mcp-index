@@ -2,7 +2,7 @@
 
 A curated, machine-readable index of **Model Context Protocol (MCP) servers, clients, frameworks and tools**.
 
-[![entries](https://img.shields.io/badge/entries-117-2f6f4f)](data/servers.json) [![official](https://img.shields.io/badge/official-104-2f6f4f)](#legend) [![license](https://img.shields.io/badge/license-MIT-2f6f4f)](LICENSE) [![CI](https://github.com/humle93/mcp-index/actions/workflows/ci.yml/badge.svg)](https://github.com/humle93/mcp-index/actions/workflows/ci.yml)
+[![entries](https://img.shields.io/badge/entries-118-2f6f4f)](data/servers.json) [![official](https://img.shields.io/badge/official-105-2f6f4f)](#legend) [![license](https://img.shields.io/badge/license-MIT-2f6f4f)](LICENSE) [![CI](https://github.com/humle93/mcp-index/actions/workflows/ci.yml/badge.svg)](https://github.com/humle93/mcp-index/actions/workflows/ci.yml)
 
 Every entry is one object in [`data/servers.json`](data/servers.json). The tables below are generated from it, so the JSON is the only place to edit and nothing in the docs can drift.
 
@@ -44,7 +44,7 @@ Each entry has this shape (see [`schema/index.schema.json`](schema/index.schema.
 - [Developer platforms & code](#developer-platforms-code) — 12
 - [Databases & storage](#databases-storage) — 19
 - [Cloud & infrastructure](#cloud-infrastructure) — 13
-- [Web, search & browsers](#web-search-browsers) — 11
+- [Web, search & browsers](#web-search-browsers) — 12
 - [Productivity & business](#productivity-business) — 11
 - [AI, models & retrieval](#ai-models-retrieval) — 8
 - [Clients & hosts](#clients-hosts) — 14
@@ -154,6 +154,7 @@ Search APIs, crawlers and real browser control, for agents that need to read or 
 
 | Project | What it does | Language | Tags |
 | --- | --- | --- | --- |
+| [agent-qa](https://github.com/vostride/agent-qa) ![official](https://img.shields.io/badge/official-2f6f4f) | Runs and reviews natural-language web, Android and iOS tests through local MCP tools, with persistent memidex memory and validated self-improvement. | `TypeScript` | `testing` `browser` `android` `ios` `memory` |
 | [Apify MCP Server](https://github.com/apify/apify-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Runs Apify actors — scrapers, crawlers and AI jobs — from any MCP client and returns their datasets. | `TypeScript` | `scraping` `actors` `automation` |
 | [Brave Search MCP](https://github.com/brave/brave-search-mcp-server) ![official](https://img.shields.io/badge/official-2f6f4f) | Web, news and local search through the Brave Search API. | `TypeScript` | `search` `web` |
 | [Bright Data MCP](https://github.com/brightdata/brightdata-mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Searches, scrapes and structures public web data through Bright Data's proxy network. | `JavaScript` | `scraping` `search` `web-data` |
@@ -249,4 +250,4 @@ Inspectors, proxies, gateways and context helpers that sit around servers rather
 
 Add or fix one object in [`data/servers.json`](data/servers.json), run `npm run check`, and open a pull request. [`CONTRIBUTING.md`](CONTRIBUTING.md) has the field rules and the review criteria (active project, working install, no dead links).
 
-_Generated from `data/servers.json` (last reviewed 2026-11-06). Do not edit the tables by hand._
+_Generated from `data/servers.json` (last reviewed 2026-11-10). Do not edit the tables by hand._

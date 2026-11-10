@@ -1,6 +1,6 @@
 {
   "$schema": "../schema/index.schema.json",
-  "updated": "2026-11-06",
+  "updated": "2026-11-10",
   "categories": [
     {
       "id": "core-and-reference",
@@ -64,6 +64,20 @@
       "official": true,
       "language": "TypeScript",
       "tags": ["desktop", "agent", "knowledge-base"]
+    },
+    {
+      "id": "agent-qa",
+      "name": "agent-qa",
+      "repo": "vostride/agent-qa",
+      "category": "web-and-search",
+      "kind": "server",
+      "description": "Runs and reviews natural-language web, Android and iOS tests through local MCP tools, with persistent memidex memory and validated self-improvement.",
+      "official": true,
+      "language": "TypeScript",
+      "transport": ["stdio", "http"],
+      "tags": ["testing", "browser", "android", "ios", "memory"],
+      "install": "npx agent-qa mcp",
+      "homepage": "https://vostride.com"
     },
     {
       "id": "airtable-mcp-cli",

@@ -1,6 +1,6 @@
 # Index — every entry
 
-All 117 entries, A–Z. Generated from [`data/servers.json`](data/servers.json); see the [README](README.md) for categories and descriptions.
+All 118 entries, A–Z. Generated from [`data/servers.json`](data/servers.json); see the [README](README.md) for categories and descriptions.
 
 | Project | Kind | Category | Repository | Language |
 | --- | --- | --- | --- | --- |
@@ -115,6 +115,7 @@ All 117 entries, A–Z. Generated from [`data/servers.json`](data/servers.json);
 | Visual Studio Code | client | Clients & hosts | [microsoft/vscode](https://github.com/microsoft/vscode) | TypeScript |
 | Weaviate MCP Server | server | Databases & storage | [weaviate/mcp-server-weaviate](https://github.com/weaviate/mcp-server-weaviate) | — |
 | Zed | client | Clients & hosts | [zed-industries/zed](https://github.com/zed-industries/zed) | Rust |
+| agent-qa | server | Web, search & browsers | [vostride/agent-qa](https://github.com/vostride/agent-qa) | TypeScript |
 | gcloud MCP | server | Cloud & infrastructure | [googleapis/gcloud-mcp](https://github.com/googleapis/gcloud-mcp) | TypeScript |
 | mcp-atlassian | server | Productivity & business | [sooperset/mcp-atlassian](https://github.com/sooperset/mcp-atlassian) | Python |
 | mcp-go | framework | Frameworks & SDKs | [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) | Go |
