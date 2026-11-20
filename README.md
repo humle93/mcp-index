@@ -34,8 +34,7 @@ Each entry has this shape (see [`schema/index.schema.json`](schema/index.schema.
   "transport": ["stdio", "http"],
   "tags": ["git", "issues", "pull-requests"],
   "install": "docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/github-mcp-server"
-}
-```
+}`
 
 ## Contents
 
@@ -248,4 +247,4 @@ Inspectors, proxies, gateways and context helpers that sit around servers rather
 
 Add or fix one object in [`data/servers.json`](data/servers.json), run `npm run check`, and open a pull request. [`CONTRIBUTING.md`](CONTRIBUTING.md) has the field rules and the review criteria (active project, working install, no dead links).
 
-_Generated from `data/servers.json` (last reviewed 2026-11-06). Do not edit the tables by hand._
+_Generated from `data/servers.json` (last reviewed 2026-11-20). Do not edit the tables by hand._
