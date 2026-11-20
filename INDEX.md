@@ -1,6 +1,6 @@
 # Index — every entry
 
-All 117 entries, A–Z. Generated from [`data/servers.json`](data/servers.json); see the [README](README.md) for categories and descriptions.
+All 116 entries, A–Z. Generated from [`data/servers.json`](data/servers.json); see the [README](README.md) for categories and descriptions.
 
 | Project | Kind | Category | Repository | Language |
 | --- | --- | --- | --- | --- |
@@ -71,7 +71,6 @@ All 117 entries, A–Z. Generated from [`data/servers.json`](data/servers.json);
 | Magic MCP | server | Developer platforms & code | [21st-dev/magic-mcp](https://github.com/21st-dev/magic-mcp) | TypeScript |
 | MarkItDown MCP | server | Tools & utilities | [microsoft/markitdown](https://github.com/microsoft/markitdown) | Python |
 | Mem0 | server | AI, models & retrieval | [mem0ai/mem0](https://github.com/mem0ai/mem0) | Python |
-| MetaMCP | tool | Tools & utilities | [metatool-ai/metamcp](https://github.com/metatool-ai/metamcp) | TypeScript |
 | Microsoft MCP Catalog | server | Cloud & infrastructure | [microsoft/mcp](https://github.com/microsoft/mcp) | C# |
 | MongoDB MCP Server | server | Databases & storage | [mongodb-js/mongodb-mcp-server](https://github.com/mongodb-js/mongodb-mcp-server) | TypeScript |
 | MotherDuck MCP Server | server | Databases & storage | [motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) | Python |
@@ -109,7 +108,7 @@ All 117 entries, A–Z. Generated from [`data/servers.json`](data/servers.json);
 | Supergateway | tool | Tools & utilities | [supercorp-ai/supergateway](https://github.com/supercorp-ai/supergateway) | TypeScript |
 | Tavily MCP | server | Web, search & browsers | [tavily-ai/tavily-mcp](https://github.com/tavily-ai/tavily-mcp) | TypeScript |
 | Terraform MCP Server | server | Cloud & infrastructure | [hashicorp/terraform-mcp-server](https://github.com/hashicorp/terraform-mcp-server) | Go |
-| Todoist MCP | server | Productivity & business | [Doist/todoist-mcp](https://github.com/Doist/todoist-mcp) | TypeScript |
+| Todoist MCP | server | Productivity & business | [todoist/todoist-mcp](https://github.com/todoist/todoist-mcp) | TypeScript |
 | Vault MCP Server | server | Cloud & infrastructure | [hashicorp/vault-mcp-server](https://github.com/hashicorp/vault-mcp-server) | Go |
 | Vectara MCP | server | AI, models & retrieval | [vectara/vectara-mcp](https://github.com/vectara/vectara-mcp) | Python |
 | Visual Studio Code | client | Clients & hosts | [microsoft/vscode](https://github.com/microsoft/vscode) | TypeScript |
