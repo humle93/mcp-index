@@ -2,7 +2,7 @@
 
 A curated, machine-readable index of **Model Context Protocol (MCP) servers, clients, frameworks and tools**.
 
-[![entries](https://img.shields.io/badge/entries-117-2f6f4f)](data/servers.json) [![official](https://img.shields.io/badge/official-104-2f6f4f)](#legend) [![license](https://img.shields.io/badge/license-MIT-2f6f4f)](LICENSE) [![CI](https://github.com/humle93/mcp-index/actions/workflows/ci.yml/badge.svg)](https://github.com/humle93/mcp-index/actions/workflows/ci.yml)
+[![entries](https://img.shields.io/badge/entries-116-2f6f4f)](data/servers.json) [![official](https://img.shields.io/badge/official-103-2f6f4f)](#legend) [![license](https://img.shields.io/badge/license-MIT-2f6f4f)](LICENSE) [![CI](https://github.com/humle93/mcp-index/actions/workflows/ci.yml/badge.svg)](https://github.com/humle93/mcp-index/actions/workflows/ci.yml)
 
 Every entry is one object in [`data/servers.json`](data/servers.json). The tables below are generated from it, so the JSON is the only place to edit and nothing in the docs can drift.
 
@@ -48,7 +48,7 @@ Each entry has this shape (see [`schema/index.schema.json`](schema/index.schema.
 - [Productivity & business](#productivity-business) — 11
 - [AI, models & retrieval](#ai-models-retrieval) — 8
 - [Clients & hosts](#clients-hosts) — 14
-- [Tools & utilities](#tools-utilities) — 12
+- [Tools & utilities](#tools-utilities) — 11
 - [Legend](#legend)
 - [Contributing](#contributing)
 
@@ -182,7 +182,7 @@ Notes, chat, tickets, mail, calendars and payments — the systems where work ac
 | [Slack MCP Server](https://github.com/korotovsky/slack-mcp-server) | Reads channels and threads and posts messages as a Slack user or bot. | `Go` | `slack` `chat` |
 | [Spotify MCP](https://github.com/varunneal/spotify-mcp) | Controls playback, playlists and search in Spotify. | `Python` | `music` `media` |
 | [Stripe AI Toolkit](https://github.com/stripe/ai) ![official](https://img.shields.io/badge/official-2f6f4f) | Stripe's toolkit, including an MCP server for customers, payments and documentation search. | `TypeScript` | `payments` `commerce` |
-| [Todoist MCP](https://github.com/Doist/todoist-mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Doist's tools for letting agents read and change Todoist tasks and projects. | `TypeScript` | `tasks` `todoist` |
+| [Todoist MCP](https://github.com/todoist/todoist-mcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Doist's tools for letting agents read and change Todoist tasks and projects. | `TypeScript` | `tasks` `todoist` |
 
 ## AI, models & retrieval
 
@@ -235,7 +235,6 @@ Inspectors, proxies, gateways and context helpers that sit around servers rather
 | [mcp-proxy](https://github.com/sparfenyuk/mcp-proxy) | Bridges stdio and SSE transports so clients and servers with different transports can talk. | `Python` | `proxy` `transport` |
 | [MCPB Desktop Extensions](https://github.com/modelcontextprotocol/mcpb) ![official](https://img.shields.io/badge/official-2f6f4f) | Packages a local MCP server as a one-click desktop extension (formerly DXT). | `TypeScript` | `packaging` `desktop` `distribution` |
 | [mcpo](https://github.com/open-webui/mcpo) ![official](https://img.shields.io/badge/official-2f6f4f) | Wraps any stdio MCP server behind an OpenAPI endpoint for clients that cannot speak MCP. | `Python` | `proxy` `openapi` |
-| [MetaMCP](https://github.com/metatool-ai/metamcp) ![official](https://img.shields.io/badge/official-2f6f4f) | Aggregates many MCP servers behind one endpoint with namespaces and a web UI. | `TypeScript` | `gateway` `aggregator` `docker` |
 | [Smithery CLI](https://github.com/arcadeai-labs/smithery-cli) ![official](https://img.shields.io/badge/official-2f6f4f) | Installs and manages MCP servers published to the Smithery registry. | `TypeScript` | `registry` `cli` |
 | [Supergateway](https://github.com/supercorp-ai/supergateway) ![official](https://img.shields.io/badge/official-2f6f4f) | Bridges stdio MCP servers to streamable HTTP and SSE, and back again. | `TypeScript` | `proxy` `transport` `gateway` |
 
