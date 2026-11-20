@@ -34,7 +34,8 @@ Each entry has this shape (see [`schema/index.schema.json`](schema/index.schema.
   "transport": ["stdio", "http"],
   "tags": ["git", "issues", "pull-requests"],
   "install": "docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/github-mcp-server"
-}`
+}
+```
 
 ## Contents
 
