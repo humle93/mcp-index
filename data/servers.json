@@ -1,6 +1,6 @@
 {
   "$schema": "../schema/index.schema.json",
-  "updated": "2026-11-06",
+  "updated": "2026-11-20",
   "categories": [
     {
       "id": "core-and-reference",
@@ -932,17 +932,6 @@
       "tags": ["memory", "retrieval"]
     },
     {
-      "id": "metamcp",
-      "name": "MetaMCP",
-      "repo": "metatool-ai/metamcp",
-      "category": "tools-and-utilities",
-      "kind": "tool",
-      "description": "Aggregates many MCP servers behind one endpoint with namespaces and a web UI.",
-      "official": true,
-      "language": "TypeScript",
-      "tags": ["gateway", "aggregator", "docker"]
-    },
-    {
       "id": "microsoft-mcp",
       "name": "Microsoft MCP Catalog",
       "repo": "microsoft/mcp",
@@ -1350,7 +1339,7 @@
     {
       "id": "todoist-mcp",
       "name": "Todoist MCP",
-      "repo": "Doist/todoist-mcp",
+      "repo": "todoist/todoist-mcp",
       "category": "productivity-and-business",
       "kind": "server",
       "description": "Doist's tools for letting agents read and change Todoist tasks and projects.",
